@@ -1,7 +1,7 @@
 {
   "name": "final-project",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Making the cool bean Home page to be mobile friendly",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/thattechnokid/coolbeanmakeover.git"
   },
-  "author": "",
+  "author": "ThatTechnoKid",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thattechnokid/coolbeanmakeover/issues"
