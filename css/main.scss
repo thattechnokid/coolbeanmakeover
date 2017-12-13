@@ -9,10 +9,22 @@ $cafe: " 'courier-prime', courier";
 
  // =============  COLORS  ===============
  $coffee: #824E00;
+      // ----------- Blacks ---------
+
+      $black: #474747;
+      $dark-black: darken($black, 10%);
+      $light-black: lighten($black, 10%);
+      $lighter-black: lighten($black, 30%);
+
+
+
 
 
 h1,h2,h3,h4,h5,h6{
   font-family: #{$cafe};
+}
+p{
+  font-family: courier;
 }
 .no-pad{
   padding: 0;
@@ -27,10 +39,16 @@ h1,h2,h3,h4,h5,h6{
   width:100%;
   height: 10px;
 }
-
-.txt-centered{
-  text-align: center;
+.spacer75{
+  width: 100%;
+  height:75px;
 }
+.spacer300{
+  width:100%;
+  height: 300px;
+}
+
+ // ===========  NAVIGATION  ==========
 .main-nav{
   width:100%;
   height:200px;
@@ -62,8 +80,40 @@ h1,h2,h3,h4,h5,h6{
   }
 
 }
+ // ============  GALLERY  ==========
+.gallery{
+  h3{
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  img{
+    width:92%;
+  }
+  hr{
+    border-color: $lighter-black;
+    border-style: dotted;
+    width: 92%;
+    position: relative;
+    left: -4%;
+    // margin-bottom: 0px;
+  }
+  a{
+    color: $coffee;
+    font-family: courier;
+
+    &:hover{
+      color:gray;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+ // ==========  GENERAL STYLES  ===========
+
 .carousel-caption{
   background-color: rgba(0,0,0,0.34);
+  padding:20px;
 }
 .links{
   width:140px;
@@ -74,3 +124,28 @@ h1,h2,h3,h4,h5,h6{
   // top:50%;
   // transform: translate(-0%,7%);
   }
+hr{
+  border-color: $light-black;
+}
+
+.txt-centered{
+  text-align: center;
+}
+.social{
+  .col-md-4{
+    height:100px;
+    text-align: center;
+    i{
+      // display: inline;
+      color:gray;
+      margin-right:20px;
+      position: relative;
+      top:50%;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+}

@@ -4,6 +4,9 @@
 h1, h2, h3, h4, h5, h6 {
   font-family:  'courier-prime', courier; }
 
+p {
+  font-family: courier; }
+
 .no-pad {
   padding: 0;
   overflow: hidden; }
@@ -16,8 +19,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 10px; }
 
-.txt-centered {
-  text-align: center; }
+.spacer75 {
+  width: 100%;
+  height: 75px; }
+
+.spacer300 {
+  width: 100%;
+  height: 300px; }
 
 .main-nav {
   width: 100%;
@@ -42,8 +50,28 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       color: #824E00; }
 
+.gallery h3 {
+  text-transform: uppercase;
+  font-size: 20px; }
+.gallery img {
+  width: 92%; }
+.gallery hr {
+  border-color: #949494;
+  border-style: dotted;
+  width: 92%;
+  position: relative;
+  left: -4%; }
+.gallery a {
+  color: #824E00;
+  font-family: courier; }
+  .gallery a:hover {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer; }
+
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.34); }
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 20px; }
 
 .links {
   width: 140px; }
@@ -51,5 +79,22 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   width: 93%;
   position: absolute; }
+
+hr {
+  border-color: #616161; }
+
+.txt-centered {
+  text-align: center; }
+
+.social .col-md-4 {
+  height: 100px;
+  text-align: center; }
+  .social .col-md-4 i {
+    color: gray;
+    margin-right: 20px;
+    position: relative;
+    top: 50%; }
+    .social .col-md-4 i:hover {
+      cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
