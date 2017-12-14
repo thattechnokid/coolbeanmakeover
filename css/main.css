@@ -38,13 +38,13 @@ p {
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .main-nav {
       height: 80px; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+    .main-nav .col-xs-6 {
+      height: 80px; } }
   .main-nav .col-md-2 {
     position: relative;
     height: 200px;
     overflow-x: hidden; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
-      .main-nav .col-md-2 .col-xs-6 {
-        height: 80px; } }
     .main-nav .col-md-2 a {
       color: #474747; }
       .main-nav .col-md-2 a h4 {
