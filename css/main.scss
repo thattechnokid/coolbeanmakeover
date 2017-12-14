@@ -129,6 +129,9 @@ p{
 }
 .links{
   width:140px;
+  @media #{$iphone4-4s}{
+    display: none;
+  }
 }
 .logo{
   width: 93%;
