@@ -31,6 +31,8 @@ $cafe: " 'courier-prime', courier";
 
     $iphone4-x: "only screen and (min-device-width: 320px) and (max-device-width: 812px)";
 
+    $iphone4-tablet: "only screen and (min-device-width: 320px) and (max-device-width: 1024px)";
+
 
 h1,h2,h3,h4,h5,h6{
   font-family: #{$cafe};
@@ -178,6 +180,8 @@ hr{
 
  /* ============  MEDIA QUERIES  ============== */
 
- @media #{$iphone4-x} {
-   ;
+ @media #{$iphone4-tablet} {
+   .container .row .spacer30{
+     display: none;
+   }
  }
