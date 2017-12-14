@@ -69,10 +69,8 @@ p{
   @media #{$iphone4-x}{
     height:80px;
   }
-  @media #{$iphone4-x}{
-    .col-xs-6{
-      height:80px;
-    }
+  .col-xs-6{
+    height:80px;
   }
   text-transform: uppercase;
   overflow-x: hidden;
