@@ -1,150 +1,36 @@
-@font-face {
-  font-family: 'courier-prime';
-  src: url(../fonts/courier-prime/Courier-Prime.ttf); }
-h1, h2, h3, h4, h5, h6 {
-  font-family:  'courier-prime', courier; }
+/*
+Error: Invalid CSS after "h1,h2,h3,h4,h5,h6": expected selector or at-rule, was "{"
+        on line 38 of main.scss
 
-p {
-  font-family: courier; }
+33: 
+34:     $iphone4-tablet: "only screen and (min-device-width: 320px) and (max-device-width: 1024px)";
+35: 
+36:     $laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) "
+37: 
+38: h1,h2,h3,h4,h5,h6{
+39:   font-family: #{$cafe};
+40: }
+41: p{
+42:   font-family: courier;
+43: }
 
-.no-pad {
-  padding: 0;
-  overflow: hidden; }
-
-/* ==============  SPACERS  =============== */
-.spacer30 {
-  width: 100%;
-  height: 30px; }
-
-.spacer10 {
-  width: 100%;
-  height: 10px; }
-
-.spacer75 {
-  width: 100%;
-  height: 75px; }
-
-.spacer300 {
-  width: 100%;
-  height: 300px; }
-
-/* ===========  NAVIGATION  ========== */
-.main-nav {
-  width: 100%;
-  height: 200px;
-  text-transform: uppercase;
-  overflow-x: hidden;
-  left: 10%; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
-    .main-nav {
-      height: 80px; } }
-  .main-nav .col-md-2 {
-    position: relative;
-    height: 200px;
-    overflow-x: hidden; }
-    .main-nav .col-md-2 a {
-      color: #474747; }
-      .main-nav .col-md-2 a h4 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 20px;
-        text-align: center;
-        transform: translate(-50%, -50%); }
-    .main-nav .col-md-2 a:hover {
-      text-decoration: none;
-      color: #824E00; }
-  .main-nav .col-xs-6 {
-    height: 80px; }
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.34);
-  padding: 20px; }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
-  .carousel-indicators {
-    bottom: -10px; }
-    .carousel-indicators li {
-      border-color: lightgray;
-      background-color: rgba(0, 0, 0, 0); }
-      .carousel-indicators li.active {
-        border-color: lightgray;
-        background-color: lightgray; }
-
-  .carousel-caption {
-    padding: 40px;
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%; }
-
-  .carousel-inner img {
-    filter: blur(2px); } }
-/* ============  GALLERY  ========== */
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  .gallery {
-    text-align: center; } }
-.gallery h3 {
-  text-transform: uppercase;
-  font-size: 20px; }
-.gallery img {
-  width: 92%; }
-.gallery hr {
-  border-color: #949494;
-  border-style: dotted;
-  width: 92%;
-  position: relative;
-  left: -4%; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-    .gallery hr hr {
-      left: 0; } }
-.gallery a {
-  color: #824E00;
-  font-family: courier; }
-  .gallery a:hover {
-    color: gray;
-    text-decoration: none;
-    cursor: pointer; }
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  .gallery .col-md-4 {
-    margin-bottom: 50px; } }
-
-/* ==========  GENERAL STYLES  =========== */
-.links {
-  width: 140px; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
-    .links {
-      display: none; } }
-
-.logo {
-  width: 93%;
-  position: absolute; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
-    .logo {
-      width: 37%; } }
-
-hr {
-  border-color: #616161; }
-
-.txt-centered {
-  text-align: center; }
-
-.social .col-md-4 {
-  height: 100px;
-  text-align: center; }
-  .social .col-md-4 i {
-    color: gray;
-    margin-right: 20px;
-    position: relative;
-    top: 50%; }
-    .social .col-md-4 i:hover {
-      cursor: pointer; }
-
-/* ============  MEDIA QUERIES  ============== */
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  .container-fluid .row .spacer30 {
-    display: none; } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+main.scss:38
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:391:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"h1,h2,h3,h4,h5,h6\": expected selector or at-rule, was \"{\"\A         on line 38 of main.scss\A \A 33: \A 34:     $iphone4-tablet: \"only screen and (min-device-width: 320px) and (max-device-width: 1024px)\";\A 35: \A 36:     $laptop: \"screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) \"\A 37: \A 38: h1,h2,h3,h4,h5,h6{\A 39:   font-family: #{$cafe};\A 40: }\A 41: p{\A 42:   font-family: courier;\A 43: }"; }

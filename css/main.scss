@@ -33,6 +33,7 @@ $cafe: " 'courier-prime', courier";
 
     $iphone4-tablet: "only screen and (min-device-width: 320px) and (max-device-width: 1024px)";
 
+    $laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) "
 
 h1,h2,h3,h4,h5,h6{
   font-family: #{$cafe};
@@ -96,10 +97,16 @@ p{
     }
 
   }
-  .col-xs-6{
-    height:80px;
+  @media #{$laptop}{
+    .col-xs-6{
+      display: none;
+    }
   }
-
+  @media #{$iphone4-x}{
+    .col-xs-6{
+      height:80px;
+    }
+  }
 }
  // =========  CAROUSEL  =============
  .carousel-caption{
@@ -159,13 +166,14 @@ p{
     width: 92%;
     position: relative;
     left: -4%;
-    @media #{$iphone4-tablet}{
-      hr{
-        left:0;
-      }
-    }
     // margin-bottom: 0px;
   }
+  @media #{$iphone4-tablet}{
+    hr{
+      left:0;
+    }
+  }
+
   a{
     color: $coffee;
     font-family: courier;
