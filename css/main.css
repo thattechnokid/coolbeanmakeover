@@ -78,7 +78,10 @@ p {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%; } }
+    left: 50%; }
+
+  .carousel-inner img {
+    filter: blur(2px); } }
 /* ============  GALLERY  ========== */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   .gallery {

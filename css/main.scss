@@ -133,6 +133,11 @@ p{
     }
 
   }
+  .carousel-inner{
+    img{
+      filter: blur(2px);
+    }
+  }
 }
 
  /* ============  GALLERY  ========== */
