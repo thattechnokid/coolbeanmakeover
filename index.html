@@ -148,6 +148,19 @@
     <div class="spacer300"></div>
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+
+ <!-- =======  ALLOW SWIPING  ============ -->
+      <script>
+        $(document).ready(function() {
+           $("#myCarousel").swiperight(function() {
+              $("#myCarousel").carousel('prev');
+            });
+           $("#myCarousel").swipeleft(function() {
+              $("#myCarousel").carousel('next');
+           });
+        });
+      </script>
 
   </body>
 
