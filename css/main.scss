@@ -101,13 +101,33 @@ p{
   }
 
 }
+ // =========  CAROUSEL  =============
+
 @media #{$iphone4-x} {
-  .carousel-caption{
-    height: 200px;
-    top:0;
-    .mob-hide{
-      display: none;
+  .carousel-indicators{
+    bottom:-10px;
+
+    li{
+      border-color: lightgray;
+      background-color: rgba(0,0,0,0);
+
+      &.active{
+        border-color: lightgray;
+        background-color: lightgray;
+      }
     }
+  }
+  .carousel-caption{
+    padding: 40px;
+    width: 100vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    .mob-hide{
+      // display: none;
+    }
+
   }
 }
 
