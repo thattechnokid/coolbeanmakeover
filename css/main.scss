@@ -160,7 +160,9 @@ p{
     position: relative;
     left: -4%;
     @media #{$iphone4-tablet}{
-      left:0;
+      hr{
+        left:0;
+      }
     }
     // margin-bottom: 0px;
   }
