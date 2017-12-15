@@ -97,6 +97,9 @@ p {
   width: 92%;
   position: relative;
   left: -4%; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .gallery hr {
+      left: 0; } }
 .gallery a {
   color: #824E00;
   font-family: courier; }

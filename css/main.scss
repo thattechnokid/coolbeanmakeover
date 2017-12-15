@@ -159,6 +159,9 @@ p{
     width: 92%;
     position: relative;
     left: -4%;
+    @media #{$iphone4-tablet}{
+      left:0;
+    }
     // margin-bottom: 0px;
   }
   a{
