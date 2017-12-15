@@ -93,7 +93,7 @@ p {
   position: absolute; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .logo {
-      width: 30%; } }
+      width: 40%; } }
 
 hr {
   border-color: #616161; }
@@ -114,7 +114,7 @@ hr {
 
 /* ============  MEDIA QUERIES  ============== */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  .container .row .spacer30 {
+  .container-fluid .row .spacer30 {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -145,7 +145,7 @@ p{
 .logo{
   width: 93%;
   @media #{$iphone4-x}{
-    width:30%;
+    width:40%;
   }
   position: absolute;
   // top:50%;
@@ -180,7 +180,7 @@ hr{
  /* ============  MEDIA QUERIES  ============== */
 
  @media #{$iphone4-tablet} {
-   .container .row .spacer30{
+   .container-fluid .row .spacer30{
      display: none;
    }
  }
