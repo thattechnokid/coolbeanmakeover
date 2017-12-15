@@ -102,7 +102,10 @@ p{
 
 }
  // =========  CAROUSEL  =============
-
+ .carousel-caption{
+   background-color: rgba(0,0,0,0.34);
+   padding:20px;
+ }
 @media #{$iphone4-x} {
   .carousel-indicators{
     bottom:-10px;
@@ -171,10 +174,7 @@ p{
 
  /* ==========  GENERAL STYLES  =========== */
 
-.carousel-caption{
-  background-color: rgba(0,0,0,0.34);
-  padding:20px;
-}
+
 .links{
   width:140px;
   @media #{$iphone4-x}{
