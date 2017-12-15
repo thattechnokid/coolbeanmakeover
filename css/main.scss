@@ -67,9 +67,11 @@ p{
 .main-nav{
   width:100%;
   height:200px;
+
   @media #{$iphone4-x}{
     height:80px;
   }
+
   text-transform: uppercase;
   overflow-x: hidden;
   left:10%;
@@ -98,7 +100,7 @@ p{
 
   }
   @media #{$laptop}{
-    .col-xs-6{
+    .col-xs-6:not(.col-md-2){
       display: none;
     }
   }

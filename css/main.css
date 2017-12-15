@@ -55,7 +55,7 @@ p {
       text-decoration: none;
       color: #824E00; }
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    .main-nav .col-xs-6 {
+    .main-nav .col-xs-6:not(.col-md-2) {
       display: none; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .main-nav .col-xs-6 {
