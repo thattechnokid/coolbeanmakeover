@@ -148,17 +148,20 @@
     <div class="spacer300"></div>
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="js/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+      <script src="node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 
  <!-- =======  ALLOW SWIPING  ============ -->
       <script>
-        $(document).ready(function() {
-           $("#myCarousel").swiperight(function() {
-              $("#myCarousel").carousel('prev');
-            });
-           $("#myCarousel").swipeleft(function() {
-              $("#myCarousel").carousel('next');
-           });
+        $(".carousel").swipe({
+
+          swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+            if (direction == 'left') $(this).carousel('next');
+            if (direction == 'right')   $(this).carousel('prev');
+
+          },
+          allowPageScroll:"vertical"
+
         });
       </script>
 
