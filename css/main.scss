@@ -71,7 +71,14 @@ p{
   @media #{$iphone4-x}{
     height:80px;
   }
-
+  #hamburger{
+    &:active{
+      filter: invert(100);
+    }
+    &:hover{
+      filter: invert(100);
+    }
+  }
   text-transform: uppercase;
   overflow-x: hidden;
   left:10%;

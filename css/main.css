@@ -38,6 +38,10 @@ p {
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .main-nav {
       height: 80px; } }
+  .main-nav #hamburger:active {
+    filter: invert(100); }
+  .main-nav #hamburger:hover {
+    filter: invert(100); }
   .main-nav .col-md-2 {
     position: relative;
     height: 200px;
