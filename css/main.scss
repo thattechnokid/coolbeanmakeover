@@ -101,8 +101,22 @@ p{
   }
 
 }
+@media #{$iphone4-x} {
+  .carousel-caption{
+    height: 200px;
+    top:0;
+    .mob-hide{
+      display: none;
+    }
+  }
+}
+
  /* ============  GALLERY  ========== */
 .gallery{
+  @media #{$iphone4-tablet}{
+      text-align: center;
+  }
+
   h3{
     text-transform: uppercase;
     font-size: 20px;
@@ -128,6 +142,11 @@ p{
       cursor: pointer;
     }
   }
+  .col-md-4{
+    @media #{$iphone4-tablet}{
+      margin-bottom:50px;
+    }
+  }
 }
 
  /* ==========  GENERAL STYLES  =========== */
@@ -145,7 +164,7 @@ p{
 .logo{
   width: 93%;
   @media #{$iphone4-x}{
-    width:40%;
+    width:37%;
   }
   position: absolute;
   // top:50%;

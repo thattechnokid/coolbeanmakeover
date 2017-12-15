@@ -57,7 +57,16 @@ p {
   .main-nav .col-xs-6 {
     height: 80px; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .carousel-caption {
+    height: 200px;
+    top: 0; }
+    .carousel-caption .mob-hide {
+      display: none; } }
 /* ============  GALLERY  ========== */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .gallery {
+    text-align: center; } }
 .gallery h3 {
   text-transform: uppercase;
   font-size: 20px; }
@@ -76,6 +85,9 @@ p {
     color: gray;
     text-decoration: none;
     cursor: pointer; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .gallery .col-md-4 {
+    margin-bottom: 50px; } }
 
 /* ==========  GENERAL STYLES  =========== */
 .carousel-caption {
@@ -93,7 +105,7 @@ p {
   position: absolute; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .logo {
-      width: 40%; } }
+      width: 37%; } }
 
 hr {
   border-color: #616161; }
