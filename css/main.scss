@@ -33,7 +33,7 @@ $cafe: " 'courier-prime', courier";
 
     $iphone4-tablet: "only screen and (min-device-width: 320px) and (max-device-width: 1024px)";
 
-    $laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) "
+    $laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)";
 
 h1,h2,h3,h4,h5,h6{
   font-family: #{$cafe};
