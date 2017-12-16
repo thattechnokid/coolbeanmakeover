@@ -31,6 +31,8 @@ $cafe: " 'courier-prime', courier";
 
     $iphone4-x: "only screen and (min-device-width: 320px) and (max-device-width: 812px)";
 
+    $iphone4-x-land: "only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape)";
+
     $iphone4-tablet: "only screen and (min-device-width: 320px) and (max-device-width: 1024px)";
 
     $laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)";
@@ -273,3 +275,7 @@ hr{
 
    }
  }
+
+@media #{$iphone4-x-land} {
+  .logo:10%;
+}

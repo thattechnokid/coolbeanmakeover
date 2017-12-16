@@ -122,13 +122,6 @@ p {
     margin-bottom: 50px; } }
 
 /* ==========  GENERAL STYLES  =========== */
-.noScroll {
-  overflow: scroll;
-  position: fixed; }
-
-.backgroundContent {
-  overflow: auto; }
-
 .links {
   width: 140px; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
@@ -174,5 +167,7 @@ hr {
     top: 80px;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.87); } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape) {
+  .logo: 10%; }
 
 /*# sourceMappingURL=main.css.map */
