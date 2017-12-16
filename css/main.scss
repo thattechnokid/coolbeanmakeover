@@ -110,6 +110,9 @@ p{
     .col-xs-6:not(.col-md-2){
       display: none;
     }
+    .mob-div-nav{
+      display: none;
+    }
   }
   @media #{$iphone4-x}{
     .col-xs-6{
@@ -202,6 +205,13 @@ p{
 
  /* ==========  GENERAL STYLES  =========== */
 
+ // .noScroll {
+ //     overflow: scroll;
+ //     position: fixed;
+ // }
+ // .backgroundContent{
+ //   overflow: auto;
+ // }
 
 .links{
   width:140px;
@@ -249,5 +259,17 @@ hr{
  @media #{$iphone4-tablet} {
    .container-fluid .row .spacer30{
      display: none;
+   }
+   .mob-div-nav{
+     display: none;
+     height:100%;
+     width:100%;
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 80px;
+     z-index: 2;
+     background-color: rgba(255, 255, 255, 0.87);
+
    }
  }
