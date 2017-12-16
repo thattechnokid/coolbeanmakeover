@@ -27,13 +27,15 @@ $cafe: " 'courier-prime', courier";
 
     $iphone6p-7p-8p: "only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)";
 
-    $iphone-X: "only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)";
+    $iphone-x: "only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)";
 
     $iphone4-x: "only screen and (min-device-width: 320px) and (max-device-width: 812px)";
 
     $iphone4-x-land: "only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape)";
 
     $iphone4-tablet: "only screen and (min-device-width: 320px) and (max-device-width: 1024px)";
+
+    $tablet-port: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)";
 
     $laptop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)";
 
@@ -73,17 +75,23 @@ p{
   @media #{$iphone4-x}{
     height:80px;
   }
+
+  @media #{$tablet-port}{
+    height:200px;
+  }
+
   #hamburger{
-    &:active{
-      filter: invert(100);
-    }
-    &:hover{
-      filter: invert(100);
-    }
+    // &:active{
+    //   filter: invert(100);
+    // }
+    // &:hover{
+    //   filter: invert(100);
+    // }
   }
   text-transform: uppercase;
   overflow-x: hidden;
   left:10%;
+
   .col-md-2{
     position: relative;
     height:200px;
@@ -119,8 +127,13 @@ p{
   @media #{$iphone4-x}{
     .col-xs-6{
       height:80px;
+
+      @media #{$tablet-port}{
+        height:200px;
+      }
     }
   }
+
 }
  // =========  CAROUSEL  =============
  .carousel-caption{
@@ -214,10 +227,12 @@ p{
  // .backgroundContent{
  //   overflow: auto;
  // }
-
+.invertColors{
+  filter: invert(100);
+}
 .links{
   width:140px;
-  @media #{$iphone4-x}{
+  @media #{$iphone4-tablet}{
     display: none;
   }
 }
@@ -272,10 +287,18 @@ hr{
      top: 80px;
      z-index: 2;
      background-color: rgba(255, 255, 255, 0.87);
-
+     @media #{$tablet-port}{
+       top:200px;
+     }
    }
  }
 
 @media #{$iphone4-x-land} {
-  .logo:10%;
+  .logo{
+    width: 23%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+  }
 }
