@@ -159,6 +159,10 @@ hr {
     top: 50%; }
     .social .col-md-4 i:hover {
       cursor: pointer; }
+  .social .col-md-4 a:hover {
+    text-decoration: none; }
+  .social .col-md-4 a:active {
+    text-decoration: none; }
 
 /* ============  MEDIA QUERIES  ============== */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
