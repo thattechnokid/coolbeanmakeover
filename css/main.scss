@@ -80,13 +80,8 @@ p{
     height:200px;
   }
 
-  #hamburger{
-    // &:active{
-    //   filter: invert(100);
-    // }
-    // &:hover{
-    //   filter: invert(100);
-    // }
+  #hamburger:active{
+    filter: invert(100);
   }
   text-transform: uppercase;
   overflow-x: hidden;
@@ -239,7 +234,7 @@ p{
 .logo{
   width: 93%;
   @media #{$iphone4-x}{
-    width:37%;
+    width:34%;
   }
   position: absolute;
   // top:50%;
@@ -274,6 +269,9 @@ hr{
  /* ============  MEDIA QUERIES  ============== */
 
  @media #{$iphone4-tablet} {
+   .spacer10{
+     display: none;
+   }
    .container-fluid .row .spacer30{
      display: none;
    }
@@ -284,21 +282,51 @@ hr{
      position: fixed;
      left: 0;
      right: 0;
-     top: 80px;
+     top: 79px;
      z-index: 2;
-     background-color: rgba(255, 255, 255, 0.87);
+     background-color: rgba(255, 255, 255, 0.96);
+     text-align: center;
      @media #{$tablet-port}{
        top:200px;
      }
+   }
+   .mob-div-lnk{
+     z-index: 3;
+     color: #474747;
+     text-transform: uppercase;
+     // margin:20px 0 20px;
+     &:hover{
+       text-decoration: none;
+     }
+     &:active{
+       color: $coffee;
+       text-decoration: none;
+     }
+     &:visited{
+       color: $coffee;
+       text-decoration: none;
+     }
+   }
+   .logo{
+     // width: 23%;
+     position: absolute;
+     top: 50%;
+     left: 25%;
+     transform: translate(-50%,-50%);
    }
  }
 
 @media #{$iphone4-x-land} {
   .logo{
-    width: 23%;
+    width: 18%;
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate(-50%,-50%);
+  }
+  .mob-div-nav{
+    br{
+      display: none;
+    }
   }
 }

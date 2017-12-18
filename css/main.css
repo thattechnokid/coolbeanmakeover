@@ -41,6 +41,8 @@ p {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .main-nav {
       height: 200px; } }
+  .main-nav #hamburger:active {
+    filter: invert(100); }
   .main-nav .col-md-2 {
     position: relative;
     height: 200px;
@@ -138,7 +140,7 @@ p {
   position: absolute; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .logo {
-      width: 37%; } }
+      width: 34%; } }
 
 hr {
   border-color: #616161; }
@@ -159,6 +161,9 @@ hr {
 
 /* ============  MEDIA QUERIES  ============== */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .spacer10 {
+    display: none; }
+
   .container-fluid .row .spacer30 {
     display: none; }
 
@@ -169,19 +174,42 @@ hr {
     position: fixed;
     left: 0;
     right: 0;
-    top: 80px;
+    top: 79px;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.87); } }
+    background-color: rgba(255, 255, 255, 0.96);
+    text-align: center; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .mob-div-nav {
       top: 200px; } }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .mob-div-lnk {
+    z-index: 3;
+    color: #474747;
+    text-transform: uppercase; }
+    .mob-div-lnk:hover {
+      text-decoration: none; }
+    .mob-div-lnk:active {
+      color: #824E00;
+      text-decoration: none; }
+    .mob-div-lnk:visited {
+      color: #824E00;
+      text-decoration: none; }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape) {
   .logo {
-    width: 23%;
+    width: 18%;
     position: absolute;
     top: 50%;
     left: 20%;
-    transform: translate(-50%, -50%); } }
+    transform: translate(-50%, -50%); }
+
+  .mob-div-nav br {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
