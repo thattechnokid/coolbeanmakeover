@@ -138,7 +138,7 @@ p{
 @media #{$iphone4-x} {
   .carousel-indicators{
     bottom:-10px;
-
+    z-index: 1;
     li{
       border-color: lightgray;
       background-color: rgba(0,0,0,0);

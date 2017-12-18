@@ -77,7 +77,8 @@ p {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .carousel-indicators {
-    bottom: -10px; }
+    bottom: -10px;
+    z-index: 1; }
     .carousel-indicators li {
       border-color: lightgray;
       background-color: rgba(0, 0, 0, 0); }
