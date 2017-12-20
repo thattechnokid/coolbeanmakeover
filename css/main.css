@@ -34,7 +34,7 @@ p {
   height: 200px;
   text-transform: uppercase;
   overflow-x: hidden;
-  left: 10%; }
+  left: 13%; }
   @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
     .main-nav {
       height: 80px; } }
