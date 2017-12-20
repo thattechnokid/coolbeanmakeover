@@ -137,9 +137,21 @@ p{
 
 }
  // =========  CAROUSEL  =============
+
  .carousel-caption{
-   background-color: rgba(0,0,0,0.34);
+   // background-color: rgba(0,0,0,0.34);
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:70%;
    padding:20px;
+   
+ }
+ .carousel-inner{
+   img{
+     filter: blur(2px);
+   }
  }
 @media #{$iphone4-x} {
   .carousel-indicators{

@@ -72,8 +72,15 @@ p {
       height: 200px; } }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.34);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
   padding: 20px; }
+
+.carousel-inner img {
+  filter: blur(2px); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .carousel-indicators {
