@@ -80,7 +80,7 @@ p {
   padding: 20px; }
 
 .carousel-inner img {
-  filter: blur(2px); }
+  filter: blur(3px); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .carousel-indicators {
